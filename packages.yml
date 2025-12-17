@@ -1,0 +1,3 @@
+packages:
+  - package: rudderlabs/id_stitching      # <--- This is the correct dbt Hub name
+    version: 1.3.2
