@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fct_unified_events
+    description: "Unified event table with stitched user IDs for profile-level analysis."
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null
+      - name: blended_user_id
+        description: "The stitched ID representing a single user across devices and sessions."
+        tests:
+          - not_null
+
+  - name: dim_user_features
+    description: "Aggregated user features for the recommendation system."
+    columns:
+      - name: blended_user_id
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: createsco_dev
+    catalog: workspace
+    description: "Source tables from the createsco_dev schema in Databricks"
+    tables:
+      - name: tracks
+        description: "Event tracking table"
+      - name: pages
+        description: "Page view tracking table"
+
+  - name: rudderstack
+    catalog: workspace
+    schema: _rudderstack
+    description: "Source tables from the _rudderstack schema"
+    tables:
+      - name: tracks
+        description: "Event tracking table"
