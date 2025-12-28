@@ -12,6 +12,8 @@ select
     e.timestamp,
     e.anonymous_id,
     e.user_id,
+    e.interested_services_weighted,
+    -- e.timestamp,
     m.stitched_id as blended_user_id,
     e.context_library_name,
     e.context_library_version

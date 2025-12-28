@@ -24,8 +24,6 @@ models:
     +materialized: view
     staging:
       +liquid_clustered_by: ["anonymous_id", "user_id"]
-    example:
-      +materialized: view
   id_stitching:
     +enabled: false
 
